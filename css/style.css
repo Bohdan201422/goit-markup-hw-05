@@ -66,7 +66,7 @@ body {
 }
 
 .link-nav {
-  color: var(--NAVY-BLUE, #2E2F42);
+  color: var(--NAVY-BLUE, #2e2f42);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -80,8 +80,8 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-nav.current{
-  color:#404bbf;
+.link-nav.current {
+  color: #404bbf;
   position: relative;
 }
 
@@ -144,7 +144,9 @@ body {
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -237,10 +239,10 @@ body {
 }
 
 .advent-div {
-display: flex;
-justify-content: center;
-align-items: center;  
-width: 264px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
   height: 112px;
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
@@ -249,7 +251,6 @@ width: 264px;
 }
 
 .advent-svg {
-
 }
 .advent-list-title {
   color: #2e2f42;
@@ -339,7 +340,7 @@ width: 264px;
   padding: 12px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-a:hover,
@@ -421,14 +422,14 @@ width: 264px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .portfolio-conteiner-list:hover .overlay {
   transform: translateY(0%);
 }
 
-.portfolio-img{
+.portfolio-img {
   position: relative;
   overflow: hidden;
 }
@@ -481,7 +482,6 @@ width: 264px;
 }
 
 .footer {
-  
   flex-shrink: 0;
   background: #2e2f42;
   padding-bottom: 100px;
@@ -493,8 +493,8 @@ width: 264px;
   align-items: baseline;
 }
 
-.logo-container{
-  margin-right: 120px
+.logo-container {
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -564,8 +564,7 @@ width: 264px;
   padding: 8px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-a:hover,
@@ -602,4 +601,54 @@ img {
 .container {
   display: flex;
   flex-shrink: 0;
+}
+
+.backdrop {
+  background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.modal {
+  border-radius: 4px;
+  background-color: var(--DAIRY, #fcfcfc);
+  width: 408px;
+  min-height: 584px;
+  padding: 24px;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 8px;
+  border-color: #0000001a;
+  margin-left: auto;
+}
+
+.modal-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+  padding-top: 24px;
 }
