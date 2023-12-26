@@ -22,6 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -138,18 +139,16 @@
                     <a class="team-a" href=""
                       ><svg class="team-svg" width="16" height="16">
                         <use
-                          href="./images/icons.svg#icon-instagram-2
-                    "
+                          href="./images/icons.svg#icon-instagram-2"
                         ></use></svg
                     ></a>
                   </li>
                   <li class="team-svg-list">
-                    <a class="team-a" href=""
-                      ><svg class="team-svg" width="16" height="16">
-                        <use
-                          href="./images/icons.svg#icon-twitter-1"
-                        ></use></svg
-                    ></a>
+                    <a class="team-a" href="">
+                      <sv class="team-svg" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter-1"></use>
+                      </sv>
+                    </a>
                   </li>
                   <li class="team-svg-list">
                     <a class="team-a" href="">
@@ -480,7 +479,23 @@
             </li>
           </ul>
         </div>
-        <div class="footer-modal"></div>
+        <div class="footer-modal">
+          <div class="footer-modal-div">
+            <label for="subscribeemail" class="footer-subcr">Subscribe</label
+            ><input
+              type="email"
+              id="subscribeemail"
+              class="footer-inp"
+              placeholder="E-mail"
+            />
+          </div>
+          <button class="footer-btn" type="submit">
+            Subscribe
+            <svg class="footer-btn-svg" width="24" heidht="24">
+              <use href="./images/icons.svg#icon-Frame-3"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-open">
@@ -494,22 +509,25 @@
         <div class="modal-div">
           <form class="modal-form">
             <div>
-              <label class="field"
-                ><span class="field-span">Name</span
-                ><input class="field-inp" type="text"
-              /></label>
+              <label for="username" class="field"
+                ><span class="field-span">Name</span></label
+              >
+              <div class="inp-div">
+                <input class="field-inp" type="text" id="username" />
+                <svg width="18" height="18">
+                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                </svg>
+              </div>
             </div>
             <div>
-              <label class="field"
-                ><span class="field-span">Phone</span
-                ><input class="field-inp" type="tel"
-              /></label>
+              <label for="userphone" class="field"
+                ><span class="field-span">Phone</span></label
+              ><input class="field-inp" type="tel" id="userphone" />
             </div>
             <div>
-              <label class="field"
-                ><span class="field-span">Email</span
-                ><input class="field-inp" type="email"
-              /></label>
+              <label for="useremail" class="field"
+                ><span class="field-span">Email</span></label
+              ><input class="field-inp" type="email" id="useremail" />
             </div>
             <div>
               <label class="field"
@@ -521,6 +539,19 @@
                 ></textarea>
               </label>
             </div>
+            <div class="field-div">
+              <label for="privacypolicy" class="field-pp"></label>
+              <input
+                type="checkbox"
+                class="field-checkbox"
+                id=" privacypolicy"
+              />
+              <p class="text-pp">
+                I accept the terms and conditions of the
+                <a href="" class="text-pp-input">Privacy Policy</a>
+              </p>
+            </div>
+            <button class="field-btn" type="submit">Send</button>
           </form>
         </div>
       </div>
