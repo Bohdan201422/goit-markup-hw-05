@@ -628,36 +628,43 @@ img {
   height: 40px;
   background: #2e2f42;
   outline: transparent;
-  color: #FFF;
- font-size: 12px;
- font-style: normal;
- font-weight: 400;
- line-height: 24px; /* 200% */
- letter-spacing: 0.48px;
- padding-left: 16px;
- margin-top: 16px;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+  letter-spacing: 0.48px;
+  padding-left: 16px;
+  margin-top: 16px;
 }
 
 .footer-btn {
   display: flex;
   border-radius: 4px;
-background: var(--IRIS, #4D5AE5);
-color: var(--WHITE, #FFF);
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */
-letter-spacing: 0.64px;
-width: 165px;
-height: 40px;
+  background: var(--IRIS, #4d5ae5);
+  color: var(--WHITE, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  width: 165px;
+  height: 40px;
   align-items: center;
+  justify-content: center;
   margin-top: 40px;
   margin-left: 24px;
-
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-btn-svg{
+.footer-btn:focus,
+.footer-btn:hover {
+  background: #404bbf;
+}
+
+.footer-btn-svg {
   margin-left: 16px;
   fill: #fff;
 }
@@ -678,8 +685,8 @@ height: 40px;
 }
 
 .backdrop.is-open {
-  opacity: 0;
-  visibility: ;visible
+  opacity: 1;
+  visibility: visible;
   pointer-events: initial;
 }
 
@@ -700,6 +707,15 @@ height: 40px;
   border-color: #0000001a;
   margin-left: auto;
   background: #e7e9fc;
+  cursor: pointer;
+}
+
+.modal-svg-btn {
+}
+
+.modal-btn:active {
+  background: #404bbf;
+  fill: #fff;
 }
 
 .modal-title {
@@ -723,9 +739,6 @@ height: 40px;
 .field {
   display: flex;
   flex-direction: column;
-}
-
-.field-span {
   color: var(--LIGHT-SLATE, #8e8f99);
   font-size: 12px;
   font-style: normal;
@@ -740,6 +753,24 @@ height: 40px;
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   width: 100%;
   outline: transparent;
+  padding-left: 38px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.field-inp:focus {
+  border-color: #4d5ae5;
+}
+
+.field-inp:focus + .field-svg {
+  fill: #4d5ae5;
+}
+
+.field-svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .field-area {
@@ -755,6 +786,7 @@ height: 40px;
 }
 
 .inp-div {
+  position: relative;
 }
 
 .field-div {
@@ -800,4 +832,12 @@ height: 40px;
   margin: auto;
   margin-top: 24px;
   display: block;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.field-btn:hover,
+.field-btn:focus {
+  background: #404bbf;
 }
