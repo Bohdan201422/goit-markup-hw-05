@@ -145,9 +145,9 @@
                   </li>
                   <li class="team-svg-list">
                     <a class="team-a" href="">
-                      <sv class="team-svg" width="16" height="16">
+                      <svg class="team-svg" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
-                      </sv>
+                      </svg>
                     </a>
                   </li>
                   <li class="team-svg-list">
@@ -498,7 +498,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
           <svg class="modal-svg-btn" width="8" height="8">
@@ -517,7 +517,7 @@
                   id="username"
                   name="username"
                 />
-                <svg class="field-svg" width="18" height="18">
+                <svg class="field-svg" width="18" height="24">
                   <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                 </svg>
               </div>
@@ -531,27 +531,26 @@
                   id="userphone"
                   name="userphone"
                 />
-                <svg class="field-svg" width="18" height="18">
+                <svg class="field-svg" width="18" height="24">
                   <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                 </svg>
               </div>
-              <div>
-                <label for="useremail" class="field">Email</label>
-                <div class="inp-div">
-                  <input
-                    class="field-inp"
-                    type="email"
-                    id="useremail"
-                    name="useremail"
-                  />
-                  <svg class="field-svg" width="18" height="18">
-                    <use
-                      href="./images/icons.svg#icon-email-black-18dp-1"
-                    ></use>
-                  </svg>
-                </div>
+            </div>
+            <div>
+              <label for="useremail" class="field">Email</label>
+              <div class="inp-div">
+                <input
+                  class="field-inp"
+                  type="email"
+                  id="useremail"
+                  name="useremail"
+                />
+                <svg class="field-svg" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
               </div>
             </div>
+
             <div>
               <label class="field"
                 ><span class="field-span">Commen</span
@@ -563,16 +562,22 @@
               </label>
             </div>
             <div class="field-div">
-              <label for="privacypolicy" class="field-pp"></label>
-              <input
-                type="checkbox"
-                class="field-checkbox"
-                id=" privacypolicy"
-              />
-              <p class="text-pp">
-                I accept the terms and conditions of the
-                <a href="" class="text-pp-input">Privacy Policy</a>
-              </p>
+              <label for="privacypolicy" class="field-pp">
+                <input
+                  type="checkbox"
+                  class="field-checkbox visually-hidden"
+                  id="privacypolicy"
+                />
+                <div class="checkbox-div">
+                  <svg class="checkbox-svg" width="11" height="8">
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                  </svg>
+                </div>
+                <p class="text-pp">
+                  I accept the terms and conditions of the
+                  <a href="" class="text-pp-input">Privacy Policy</a>
+                </p>
+              </label>
             </div>
             <button class="field-btn" type="submit">Send</button>
           </form>
