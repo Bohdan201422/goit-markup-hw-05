@@ -872,13 +872,13 @@ img {
   opacity: 0;
 }
 
-.field-checkbox:checked + .checkbox-div {
-  background-color: #404bbf;
+.field-checkbox:checked + .field-pp > .checkbox-div {
+  background: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
-.field-checkbox:checked + .checkbox-div > .checkbox-svg {
+.field-checkbox:checked + .field-pp > .checkbox-div > .checkbox-svg {
   opacity: 1;
 }
 
